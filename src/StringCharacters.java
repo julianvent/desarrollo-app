@@ -8,7 +8,7 @@ public class StringCharacters {
 
         int spaces = 0,
         vowels = 0,
-        letters = 0;
+        symbols = 0;
 
         char[] vowelsChar = {'a', 'e', 'i', 'o', 'u', 'á', 'é', 'í', 'ó', 'ú'};
 
@@ -22,11 +22,11 @@ public class StringCharacters {
                     }
                 }
             } else {
-                letters++;
+                symbols++;
             }
         }
 
         System.out.println("The text contained vowels: " + vowels +  '\n'
-                + "consonants: " + (text.length() - letters - spaces - vowels) + '\n' + "spaces: " + spaces);
+                + "consonants: " + (text.length() - symbols - spaces - vowels) + '\n' + "spaces: " + spaces);
     }
 }
